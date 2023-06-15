@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\admin\\source\\repos\\StarSecurity\\StarSecurity\\StarSecurity.csproj": {}
+    "C:\\Users\\hp\\Documents\\GitHub\\StarSecurities\\StarSecurity\\StarSecurity\\StarSecurity.csproj": {}
   },
   "projects": {
-    "C:\\Users\\admin\\source\\repos\\StarSecurity\\StarSecurity\\StarSecurity.csproj": {
+    "C:\\Users\\hp\\Documents\\GitHub\\StarSecurities\\StarSecurity\\StarSecurity\\StarSecurity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\admin\\source\\repos\\StarSecurity\\StarSecurity\\StarSecurity.csproj",
+        "projectUniqueName": "C:\\Users\\hp\\Documents\\GitHub\\StarSecurities\\StarSecurity\\StarSecurity\\StarSecurity.csproj",
         "projectName": "StarSecurity",
-        "projectPath": "C:\\Users\\admin\\source\\repos\\StarSecurity\\StarSecurity\\StarSecurity.csproj",
-        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\admin\\source\\repos\\StarSecurity\\StarSecurity\\obj\\",
+        "projectPath": "C:\\Users\\hp\\Documents\\GitHub\\StarSecurities\\StarSecurity\\StarSecurity\\StarSecurity.csproj",
+        "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\hp\\Documents\\GitHub\\StarSecurities\\StarSecurity\\StarSecurity\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\sdk\\7.0.304\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -88,7 +89,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
         }
       }
     }
