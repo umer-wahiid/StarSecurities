@@ -1,0 +1,90 @@
+﻿@model IEnumerable<StarSecurity.Models.Employee>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.EName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EAddress)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ENumber)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EQualification)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ECode)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EDepartment)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ERole)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EGrade)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EClients)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EAchievements)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.EName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EAddress)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ENumber)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EQualification)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ECode)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EDepartment)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ERole)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EGrade)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EClients)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EAchievements)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.EmployeeId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.EmployeeId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.EmployeeId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
