@@ -1,11 +1,9 @@
-﻿
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace StarSecurity.Models
 {
     public class Employee
     {
-
         public int EmployeeId { get; set; }
 
         [Required]
@@ -48,9 +46,5 @@ namespace StarSecurity.Models
 
         [Display(Name = "Achievements")]
         public string EAchievements { get; set; }
-
-
-
-
     }
 }
