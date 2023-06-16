@@ -5,7 +5,7 @@ namespace StarSecurity.Models
 {
     public class Login
     {
-        public int Id { get; set; }
+        public int LoginId { get; set; }
 
         [Required]
         [DataType(DataType.EmailAddress)]
