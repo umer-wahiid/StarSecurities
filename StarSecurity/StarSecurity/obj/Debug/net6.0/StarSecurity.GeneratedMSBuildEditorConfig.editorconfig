@@ -8,149 +8,149 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = StarSecurity
 build_property.RootNamespace = StarSecurity
-build_property.ProjectDir = C:\Users\imran\source\repos\StarSecurities\StarSecurity\StarSecurity\
+build_property.ProjectDir = D:\console\StarSecurities\StarSecurity\StarSecurity\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\imran\source\repos\StarSecurities\StarSecurity\StarSecurity
+build_property.MSBuildProjectDirectory = D:\console\StarSecurities\StarSecurity\StarSecurity
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/imran/source/repos/StarSecurities/StarSecurity/StarSecurity/Views/Clients/Create.cshtml]
+[D:/console/StarSecurities/StarSecurity/StarSecurity/Views/Clients/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50c1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/imran/source/repos/StarSecurities/StarSecurity/StarSecurity/Views/Clients/Delete.cshtml]
+[D:/console/StarSecurities/StarSecurity/StarSecurity/Views/Clients/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50c1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/imran/source/repos/StarSecurities/StarSecurity/StarSecurity/Views/Clients/Details.cshtml]
+[D:/console/StarSecurities/StarSecurity/StarSecurity/Views/Clients/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50c1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/imran/source/repos/StarSecurities/StarSecurity/StarSecurity/Views/Clients/Edit.cshtml]
+[D:/console/StarSecurities/StarSecurity/StarSecurity/Views/Clients/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50c1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/imran/source/repos/StarSecurities/StarSecurity/StarSecurity/Views/Clients/Index.cshtml]
+[D:/console/StarSecurities/StarSecurity/StarSecurity/Views/Clients/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50c1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/imran/source/repos/StarSecurities/StarSecurity/StarSecurity/Views/Employees/Create.cshtml]
+[D:/console/StarSecurities/StarSecurity/StarSecurity/Views/Employees/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/imran/source/repos/StarSecurities/StarSecurity/StarSecurity/Views/Employees/Delete.cshtml]
+[D:/console/StarSecurities/StarSecurity/StarSecurity/Views/Employees/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVzXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/imran/source/repos/StarSecurities/StarSecurity/StarSecurity/Views/Employees/Details.cshtml]
+[D:/console/StarSecurities/StarSecurity/StarSecurity/Views/Employees/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVzXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/imran/source/repos/StarSecurities/StarSecurity/StarSecurity/Views/Employees/Edit.cshtml]
+[D:/console/StarSecurities/StarSecurity/StarSecurity/Views/Employees/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVzXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/imran/source/repos/StarSecurities/StarSecurity/StarSecurity/Views/Employees/Index.cshtml]
+[D:/console/StarSecurities/StarSecurity/StarSecurity/Views/Employees/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/imran/source/repos/StarSecurities/StarSecurity/StarSecurity/Views/Home/Index.cshtml]
+[D:/console/StarSecurities/StarSecurity/StarSecurity/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/imran/source/repos/StarSecurities/StarSecurity/StarSecurity/Views/Home/Privacy.cshtml]
+[D:/console/StarSecurities/StarSecurity/StarSecurity/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/imran/source/repos/StarSecurities/StarSecurity/StarSecurity/Views/Logins/Create.cshtml]
+[D:/console/StarSecurities/StarSecurity/StarSecurity/Views/Logins/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5zXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/imran/source/repos/StarSecurities/StarSecurity/StarSecurity/Views/Logins/Delete.cshtml]
+[D:/console/StarSecurities/StarSecurity/StarSecurity/Views/Logins/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5zXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/imran/source/repos/StarSecurities/StarSecurity/StarSecurity/Views/Logins/Details.cshtml]
+[D:/console/StarSecurities/StarSecurity/StarSecurity/Views/Logins/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5zXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/imran/source/repos/StarSecurities/StarSecurity/StarSecurity/Views/Logins/Edit.cshtml]
+[D:/console/StarSecurities/StarSecurity/StarSecurity/Views/Logins/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5zXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/imran/source/repos/StarSecurities/StarSecurity/StarSecurity/Views/Logins/Index.cshtml]
+[D:/console/StarSecurities/StarSecurity/StarSecurity/Views/Logins/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5zXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/imran/source/repos/StarSecurities/StarSecurity/StarSecurity/Views/Services/Create.cshtml]
+[D:/console/StarSecurities/StarSecurity/StarSecurity/Views/Services/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljZXNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/imran/source/repos/StarSecurities/StarSecurity/StarSecurity/Views/Services/Delete.cshtml]
+[D:/console/StarSecurities/StarSecurity/StarSecurity/Views/Services/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljZXNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/imran/source/repos/StarSecurities/StarSecurity/StarSecurity/Views/Services/Details.cshtml]
+[D:/console/StarSecurities/StarSecurity/StarSecurity/Views/Services/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljZXNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/imran/source/repos/StarSecurities/StarSecurity/StarSecurity/Views/Services/Edit.cshtml]
+[D:/console/StarSecurities/StarSecurity/StarSecurity/Views/Services/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljZXNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/imran/source/repos/StarSecurities/StarSecurity/StarSecurity/Views/Services/Index.cshtml]
+[D:/console/StarSecurities/StarSecurity/StarSecurity/Views/Services/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/imran/source/repos/StarSecurities/StarSecurity/StarSecurity/Views/Shared/Error.cshtml]
+[D:/console/StarSecurities/StarSecurity/StarSecurity/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/imran/source/repos/StarSecurities/StarSecurity/StarSecurity/Views/Shared/_UserLayout.cshtml]
+[D:/console/StarSecurities/StarSecurity/StarSecurity/Views/Shared/_UserLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Vc2VyTGF5b3V0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/imran/source/repos/StarSecurities/StarSecurity/StarSecurity/Views/Shared/_ValidationScriptsPartial.cshtml]
+[D:/console/StarSecurities/StarSecurity/StarSecurity/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/imran/source/repos/StarSecurities/StarSecurity/StarSecurity/Views/User/About.cshtml]
+[D:/console/StarSecurities/StarSecurity/StarSecurity/Views/User/About.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxBYm91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/imran/source/repos/StarSecurities/StarSecurity/StarSecurity/Views/User/Index.cshtml]
+[D:/console/StarSecurities/StarSecurity/StarSecurity/Views/User/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/imran/source/repos/StarSecurities/StarSecurity/StarSecurity/Views/Vacancies/Create.cshtml]
+[D:/console/StarSecurities/StarSecurity/StarSecurity/Views/Vacancies/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmFjYW5jaWVzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/imran/source/repos/StarSecurities/StarSecurity/StarSecurity/Views/Vacancies/Delete.cshtml]
+[D:/console/StarSecurities/StarSecurity/StarSecurity/Views/Vacancies/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmFjYW5jaWVzXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/imran/source/repos/StarSecurities/StarSecurity/StarSecurity/Views/Vacancies/Details.cshtml]
+[D:/console/StarSecurities/StarSecurity/StarSecurity/Views/Vacancies/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmFjYW5jaWVzXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/imran/source/repos/StarSecurities/StarSecurity/StarSecurity/Views/Vacancies/Edit.cshtml]
+[D:/console/StarSecurities/StarSecurity/StarSecurity/Views/Vacancies/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmFjYW5jaWVzXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/imran/source/repos/StarSecurities/StarSecurity/StarSecurity/Views/Vacancies/Index.cshtml]
+[D:/console/StarSecurities/StarSecurity/StarSecurity/Views/Vacancies/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmFjYW5jaWVzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/imran/source/repos/StarSecurities/StarSecurity/StarSecurity/Views/_ViewImports.cshtml]
+[D:/console/StarSecurities/StarSecurity/StarSecurity/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/imran/source/repos/StarSecurities/StarSecurity/StarSecurity/Views/_ViewStart.cshtml]
+[D:/console/StarSecurities/StarSecurity/StarSecurity/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/imran/source/repos/StarSecurities/StarSecurity/StarSecurity/Views/Shared/_Layout.cshtml]
+[D:/console/StarSecurities/StarSecurity/StarSecurity/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-x4iny8rvkj

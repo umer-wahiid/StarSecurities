@@ -34,11 +34,7 @@ namespace StarSecurity.Migrations
                         .HasMaxLength(25)
                         .HasColumnType("nvarchar(25)");
 
-                    b.Property<string>("ServiceName")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("ServicesId1")
+                    b.Property<int>("ServicesId")
                         .HasColumnType("int");
 
                     b.Property<string>("StaffAsign")
@@ -48,7 +44,7 @@ namespace StarSecurity.Migrations
 
                     b.HasKey("ClientId");
 
-                    b.HasIndex("ServicesId1");
+                    b.HasIndex("ServicesId");
 
                     b.ToTable("Clients");
                 });
@@ -219,13 +215,13 @@ namespace StarSecurity.Migrations
 
             modelBuilder.Entity("StarSecurity.Models.Client", b =>
                 {
-                    b.HasOne("StarSecurity.Models.Services", "ServicesId")
+                    b.HasOne("StarSecurity.Models.Services", "Services")
                         .WithMany()
-                        .HasForeignKey("ServicesId1")
+                        .HasForeignKey("ServicesId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("ServicesId");
+                    b.Navigation("Services");
                 });
 #pragma warning restore 612, 618
         }
