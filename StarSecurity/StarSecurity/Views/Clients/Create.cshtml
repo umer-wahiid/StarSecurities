@@ -19,14 +19,12 @@
                 <span asp-validation-for="ClientName" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="StaffAsign" class="control-label"></label>
-                <input asp-for="StaffAsign" class="form-control" />
-                <span asp-validation-for="StaffAsign" class="text-danger"></span>
+                <label asp-for="EmployeeId" class="control-label"></label>
+                <select asp-for="EmployeeId" class ="form-control" asp-items="ViewBag.EmployeeId"></select>
             </div>
             <div class="form-group">
-                <label asp-for="Services" class="control-label"></label>
-                <input asp-for="Services" class="form-control" />
-                <span asp-validation-for="Services" class="text-danger"></span>
+                <label asp-for="ServicesId" class="control-label"></label>
+                <select asp-for="ServicesId" class ="form-control" asp-items="ViewBag.ServicesId"></select>
             </div>
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-primary" />

@@ -11,13 +11,43 @@
 <hr />
 <div class="row">
     <div class="col-md-4">
-        <form asp-action="Edit">
+        <form asp-action="Edit" method="post" enctype="multipart/form-data">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="ServicesId" />
             <div class="form-group">
-                <label asp-for="ServiceName" class="control-label"></label>
-                <input asp-for="ServiceName" class="form-control" />
+                @* <label asp-for="ServiceName" class="control-label"></label>
+                <input asp-for="ServiceName" class="form-control" />*@
+                <select id="type" asp-for="ServiceName" class="form-control">
+                    <option value="">-- Select Service Name --</option>
+                    <option value="Manned Guarding">Manned Guarding</option>
+                    <option value="Cash Services">Cash Services</option>
+                    <option value="Recruitment and Training">Recruitment and Training</option>
+                    <option value="Electronic Security Systems">Electronic Security Systems</option>
+                </select>
+                @*<p id="Manned Guarding">
+                Showcase the service portfolio of the Manned Guarding division, including services such as guarding,
+                fire squad, dog squad, bodyguards, etc. Specify the sectors served, such as industries, banks, retail outlets,
+                residential colonies, hotels, and institutions.
+                </p>
+                <p id="Cash Services">
+                Highlight the range of services provided by the Cash Services division, including secured transfer of cash and
+                valuables, ATM replenishment, vaulting and processing services, multi-point cash collection, and caretaker services.
+                </p>
+                <p id="Recruitment and training">
+                Describe the division's role in recruiting, training, and delivering suitable manpower to meet the organization's
+                requirements. Emphasize the close alignment with other divisions of Star Security Services.
+                </p>
+                <p id="Electronic security systems">
+                Provide information about the Electronic Security Systems division and its collaboration with strategic partners.
+                Outline the division's activities, including design, installation, and maintenance of various security systems such
+                as access control, CCTVs, fire alarm systems, intrusion alarms, etc.
+                </p>*@
                 <span asp-validation-for="ServiceName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ServiceLogo" class="control-label"></label>
+                <input type="file" name="image" class="form-control" />
+                <span asp-validation-for="ServiceLogo" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="ServiceDetail" class="control-label"></label>

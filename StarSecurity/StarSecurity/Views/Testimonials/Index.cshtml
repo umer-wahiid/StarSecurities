@@ -1,0 +1,54 @@
+﻿@model IEnumerable<StarSecurity.Models.Testimonials>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.TName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TProfession)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TImage)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TDescription)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.TName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TProfession)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TImage)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TDescription)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.TestimonialsId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.TestimonialsId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.TestimonialsId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

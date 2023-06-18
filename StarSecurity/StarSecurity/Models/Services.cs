@@ -13,6 +13,10 @@ namespace StarSecurity.Models
         public string ServiceName { get; set; }
 
         [Required]
+        [StringLength(1000)]
+        public string ServiceLogo { get; set; }
+
+        [Required]
         [Display(Name = "Service Details")]
         [StringLength(25)]
         public string ServiceDetail { get; set; }

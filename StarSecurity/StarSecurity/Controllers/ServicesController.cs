@@ -12,10 +12,12 @@ namespace StarSecurity.Controllers
     public class ServicesController : Controller
     {
         private readonly StarSecurityDbContext _context;
+        IWebHostEnvironment iw;
 
-        public ServicesController(StarSecurityDbContext context)
+        public ServicesController(StarSecurityDbContext context, IWebHostEnvironment i)
         {
             _context = context;
+            iw = i;
         }
 
         // GET: Services
@@ -55,13 +57,25 @@ namespace StarSecurity.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ServicesId,ServiceName,ServiceDetail,SubServiceName,SubServiceDetail,ServiceFee")] Services services)
+        public async Task<IActionResult> Create(Services services, IFormFile image)
         {
-            if (ModelState.IsValid)
+            if (image != null)
             {
-                _context.Add(services);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                string ext = Path.GetExtension(image.FileName);
+                if(ext == ".jpg" || ext == ".png" || ext == ".jpeg")
+                {
+                    string d = Path.Combine(iw.WebRootPath, "Image");
+                    var fname = Path.GetFileName(image.FileName);
+                    string filepath = Path.Combine(d, fname);
+                    using (var fs = new FileStream(filepath, FileMode.Create))
+                    {
+                        await image.CopyToAsync(fs);
+                    }
+                    services.ServiceLogo = @"Image/" + fname;
+                    _context.Add(services);
+                    await _context.SaveChangesAsync();
+                    return RedirectToAction(nameof(Index));
+                }
             }
             return View(services);
         }
@@ -87,31 +101,25 @@ namespace StarSecurity.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("ServicesId,ServiceName,ServiceDetail,SubServiceName,SubServiceDetail,ServiceFee")] Services services)
+        public async Task<IActionResult> Edit(int id, Services services, IFormFile image)
         {
-            if (id != services.ServicesId)
+            if (image != null)
             {
-                return NotFound();
-            }
 
-            if (ModelState.IsValid)
+            }
+            string ext = Path.GetExtension(image.FileName);
+            if (ext == ".jpg" || ext == ".png" || ext == ".jpeg")
             {
-                try
+                string d = Path.Combine(iw.WebRootPath, "Image");
+                var fname = Path.GetFileName(image.FileName);
+                string filepath = Path.Combine(d, fname);
+                using (var fs = new FileStream(filepath, FileMode.Create))
                 {
-                    _context.Update(services);
-                    await _context.SaveChangesAsync();
+                    await image.CopyToAsync(fs);
                 }
-                catch (DbUpdateConcurrencyException)
-                {
-                    if (!ServicesExists(services.ServicesId))
-                    {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        throw;
-                    }
-                }
+                services.ServiceLogo = @"Image/" + fname;
+                _context.Update(services);
+                await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
             return View(services);

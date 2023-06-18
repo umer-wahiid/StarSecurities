@@ -18,5 +18,7 @@ namespace StarSecurity.Models
         public DbSet<Client> Clients { get; set; }
 
         public DbSet<Vacancy> Vacancy { get; set; }
+
+        public DbSet<Testimonials> Testimonials { get; set; }
     }
 }

@@ -34,15 +34,15 @@ namespace StarSecurity.Migrations
                         .HasMaxLength(25)
                         .HasColumnType("nvarchar(25)");
 
+                    b.Property<int>("EmployeeId")
+                        .HasColumnType("int");
+
                     b.Property<int>("ServicesId")
                         .HasColumnType("int");
 
-                    b.Property<string>("StaffAsign")
-                        .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("nvarchar(100)");
-
                     b.HasKey("ClientId");
+
+                    b.HasIndex("EmployeeId");
 
                     b.HasIndex("ServicesId");
 
@@ -95,6 +95,16 @@ namespace StarSecurity.Migrations
                     b.Property<string>("ERole")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.Property<string>("Password")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
 
                     b.HasKey("EmployeeId");
 
@@ -150,6 +160,11 @@ namespace StarSecurity.Migrations
                     b.Property<int>("ServiceFee")
                         .HasColumnType("int");
 
+                    b.Property<string>("ServiceLogo")
+                        .IsRequired()
+                        .HasMaxLength(1000)
+                        .HasColumnType("nvarchar(1000)");
+
                     b.Property<string>("ServiceName")
                         .IsRequired()
                         .HasMaxLength(25)
@@ -168,6 +183,39 @@ namespace StarSecurity.Migrations
                     b.HasKey("ServicesId");
 
                     b.ToTable("Services");
+                });
+
+            modelBuilder.Entity("StarSecurity.Models.Testimonials", b =>
+                {
+                    b.Property<int>("TestimonialsId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("TestimonialsId"));
+
+                    b.Property<string>("TDescription")
+                        .IsRequired()
+                        .HasMaxLength(1000)
+                        .HasColumnType("nvarchar(1000)");
+
+                    b.Property<string>("TImage")
+                        .IsRequired()
+                        .HasMaxLength(1000)
+                        .HasColumnType("nvarchar(1000)");
+
+                    b.Property<string>("TName")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.Property<string>("TProfession")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.HasKey("TestimonialsId");
+
+                    b.ToTable("Testimonials");
                 });
 
             modelBuilder.Entity("StarSecurity.Models.Vacancy", b =>
@@ -215,11 +263,19 @@ namespace StarSecurity.Migrations
 
             modelBuilder.Entity("StarSecurity.Models.Client", b =>
                 {
+                    b.HasOne("StarSecurity.Models.Employee", "Employee")
+                        .WithMany()
+                        .HasForeignKey("EmployeeId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.HasOne("StarSecurity.Models.Services", "Services")
                         .WithMany()
                         .HasForeignKey("ServicesId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.Navigation("Employee");
 
                     b.Navigation("Services");
                 });

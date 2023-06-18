@@ -1,0 +1,42 @@
+﻿@model IEnumerable<StarSecurity.Models.Testimonials>
+
+@{
+    ViewData["Title"] = "Testimonials";
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+}
+
+<!-- Page Header Start -->
+<div class="container-fluid page-header py-5 mb-5">
+    <div class="container py-5">
+        <h1 class="display-3 text-white mb-3 animated slideInDown">Testimonial</h1>
+        <nav aria-label="breadcrumb animated slideInDown">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
+                <li class="breadcrumb-item"><a class="text-white" href="#">Pages</a></li>
+                <li class="breadcrumb-item text-white active" aria-current="page">Testimonial</li>
+            </ol>
+        </nav>
+    </div>
+</div>
+<!-- Page Header End -->
+
+<!-- Testimonial Start -->
+<div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+    <div class="container">
+        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+            <div class="bg-primary mb-3 mx-auto" style="width: 60px; height: 2px;"></div>
+            <h1 class="display-5 mb-5">Testimonial</h1>
+        </div>
+        <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
+            @foreach(var item in Model)
+            {
+                <div class="testimonial-item text-center" data-dot="<img class='img-fluid' src='~/@item.TImage' alt='~/@item.TImage'>">
+                    <p class="fs-5">@item.TDescription</p>
+                    <h4>@item.TName</h4>
+                    <span class="text-primary">@item.TProfession</span>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+<!-- Testimonial End -->
